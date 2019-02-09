@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { BodyComponent } from './body/body.component';
+import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './404/404.component';
 
 
@@ -11,10 +11,7 @@ import { NotFoundComponent } from './404/404.component';
  * 
  */
 const routes: Routes = [
-  {
-    path: '',
-    component: BodyComponent
-  },
+  { path: '', component: HomeComponent },
   {
     path: 'about', // Lazy loaded
     loadChildren: './about/about.module#AboutModule'

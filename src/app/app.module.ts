@@ -1,11 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HttpModule } from '@angular/http';
 import { NgModule } from '@angular/core';
+import { SharedMaterialModule } from './shared/material/material.module';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BodyModule } from './body/body.module';
+import { HomeModule } from './home/home.module';
 import { NotFoundModule } from './404/404.module';
 
 import 'hammerjs';
@@ -16,12 +17,12 @@ import 'hammerjs';
   ],
 
   imports: [
-    BodyModule,
-    AppRoutingModule,
+    SharedMaterialModule,
+    HomeModule,
     BrowserModule,
     BrowserAnimationsModule,
-    HttpModule,
-    NotFoundModule
+    NotFoundModule,
+    AppRoutingModule,
   ],
 
   providers: [],
