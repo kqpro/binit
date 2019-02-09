@@ -9,7 +9,7 @@ branches:
     - gh-pages
 
 before_script:
-  - npm install -g @angular/cli
+  - npm install -g @angular/cli@1.7.4
 
 script:
   - echo "Building for PROD"
